@@ -38,7 +38,7 @@ const PropertyRow: React.FC<{ property: Property; index: number }> = ({ property
     : property.availability?.toUpperCase();
 
   return (
-    <Link to={`/property/${property._id}`} className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#D4755B] rounded-2xl">
+    <Link to={`/property/${property._id}`} className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] rounded-2xl">
       <div className="bg-white rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.06)] hover:shadow-[0_6px_24px_rgba(0,0,0,0.09)] transition-shadow duration-300 flex gap-0">
         {/* Thumbnail */}
         <div className="relative w-52 shrink-0 overflow-hidden">
@@ -61,9 +61,9 @@ const PropertyRow: React.FC<{ property: Property; index: number }> = ({ property
         {/* Content */}
         <div className="flex-1 px-6 py-5 flex flex-col justify-between">
           <div>
-            <h3 className="font-fraunces text-lg font-semibold text-[#221410] mb-1 leading-snug">{property.title}</h3>
+            <h3 className="font-fraunces text-lg font-semibold text-[#1F2937] mb-1 leading-snug">{property.title}</h3>
             <div className="flex items-center gap-1 mb-3">
-              <MapPin className="w-3.5 h-3.5 text-[#D4755B] shrink-0" />
+              <MapPin className="w-3.5 h-3.5 text-[#004AAD] shrink-0" />
               <span className="font-manrope text-sm text-[#6B7280]">{property.location}</span>
             </div>
             <div className="flex items-center gap-4 font-manrope text-sm text-[#6B7280]">
@@ -73,11 +73,11 @@ const PropertyRow: React.FC<{ property: Property; index: number }> = ({ property
             </div>
           </div>
           <div className="flex items-center justify-between mt-4">
-            <p className="font-fraunces text-2xl font-bold text-[#D4755B] tabular-nums">
+            <p className="font-fraunces text-2xl font-bold text-[#004AAD] tabular-nums">
               {formatPrice(property.price)}
             </p>
             {property.type && (
-              <span className="font-manrope text-xs uppercase tracking-wider text-[#9CA3AF] border border-[#E6E0DA] rounded px-2 py-0.5">
+              <span className="font-manrope text-xs uppercase tracking-wider text-[#9CA3AF] border border-[#E2E8F0] rounded px-2 py-0.5">
                 {property.type}
               </span>
             )}

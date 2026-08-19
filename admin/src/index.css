@@ -6,10 +6,10 @@
 
 @layer base {
   :root {
-    --color-cream: #faf8f4;
-    --color-terracotta: #d4755b;
+    --color-cream: #FFFFFF;
+    --color-terracotta: #004AAD;
     --color-dark: #1c1b1a;
-    --color-sand: #e6d5c3;
+    --color-sand: #E2E8F0;
     --color-muted: #5a5856;
   }
 
@@ -19,7 +19,7 @@
   }
 
   body {
-    background-color: #faf8f4;
+    background-color: #FFFFFF;
     color: #1c1b1a;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -53,24 +53,24 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f5f1e8;
+  background: #F8FAFC;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d4755b;
+  background: #004AAD;
   border-radius: 10px;
   opacity: 0.6;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #c05e44;
+  background: #003B8B;
 }
 
 /* Focus ring override for brand color */
 .focus-terracotta:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 117, 91, 0.25);
-  border-color: #d4755b;
+  box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.25);
+  border-color: #004AAD;
 }
 
 /* Smooth transitions for interactive elements */

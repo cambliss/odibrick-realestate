@@ -7,13 +7,13 @@ const ContactHeroSection: React.FC = () => {
         <div className="text-center">
           {/* Label */}
           <div className="flex justify-center mb-4">
-            <span className="font-space-mono text-xs text-[#D4755B] uppercase tracking-widest">
+            <span className="font-space-mono text-xs text-[#004AAD] uppercase tracking-widest">
               Contact & Support
             </span>
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-fraunces text-6xl text-[#221410] mb-6">
+          <h1 className="font-fraunces text-6xl text-[#1F2937] mb-6">
             We'd Love to Hear From You
           </h1>
 

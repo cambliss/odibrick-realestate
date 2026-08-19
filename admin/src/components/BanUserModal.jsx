@@ -57,7 +57,7 @@ const BanUserModal = ({
           className="bg-white rounded-2xl w-full max-w-md shadow-2xl"
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-[#E6E0DA]">
+          <div className="flex items-center justify-between p-6 border-b border-[#E2E8F0]">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-red-50 rounded-xl flex items-center justify-center">
                 <Shield className="w-5 h-5 text-red-600" />
@@ -69,7 +69,7 @@ const BanUserModal = ({
             </div>
             <button
               onClick={handleClose}
-              className="p-2 hover:bg-[#F5F1E8] rounded-lg transition-colors"
+              className="p-2 hover:bg-[#F8FAFC] rounded-lg transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -104,7 +104,7 @@ const BanUserModal = ({
                 className={`w-full px-4 py-3 border rounded-xl bg-white text-[#1C1B1A] placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 resize-none transition-all ${
                   errors.reason
                     ? 'border-red-300 focus:ring-red-500/20'
-                    : 'border-[#E6E0DA] focus:border-[#D4755B] focus:ring-[#D4755B]/20'
+                    : 'border-[#E2E8F0] focus:border-[#004AAD] focus:ring-[#004AAD]/20'
                 }`}
                 placeholder="Provide detailed explanation for the permanent ban..."
               />
@@ -125,7 +125,7 @@ const BanUserModal = ({
                 className={`w-full px-4 py-3 border rounded-xl bg-white text-[#1C1B1A] placeholder:text-[#9CA3AF] focus:outline-none focus:ring-2 transition-all ${
                   errors.confirmText
                     ? 'border-red-300 focus:ring-red-500/20'
-                    : 'border-[#E6E0DA] focus:border-[#D4755B] focus:ring-[#D4755B]/20'
+                    : 'border-[#E2E8F0] focus:border-[#004AAD] focus:ring-[#004AAD]/20'
                 }`}
                 placeholder="PERMANENTLY BAN"
               />
@@ -140,7 +140,7 @@ const BanUserModal = ({
                 type="button"
                 onClick={handleClose}
                 disabled={isLoading}
-                className="flex-1 px-4 py-3 border border-[#E6E0DA] text-[#1C1B1A] rounded-xl font-semibold text-sm hover:bg-[#F5F1E8] transition-colors disabled:opacity-50"
+                className="flex-1 px-4 py-3 border border-[#E2E8F0] text-[#1C1B1A] rounded-xl font-semibold text-sm hover:bg-[#F8FAFC] transition-colors disabled:opacity-50"
               >
                 Cancel
               </button>

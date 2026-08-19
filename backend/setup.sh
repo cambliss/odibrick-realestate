@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# BuildEstate Backend Quick Setup Script
-# This script helps you set up the BuildEstate backend quickly
+# Odibrick Backend Quick Setup Script
+# This script helps you set up the Odibrick backend quickly
 
 # Colors for output
 RED='\033[0;31m'
@@ -33,7 +33,7 @@ print_header() {
 }
 
 # Header
-print_header "🏠 BuildEstate Backend Setup"
+print_header "🏠 Odibrick Backend Setup"
 print_header "============================"
 echo ""
 
@@ -137,7 +137,7 @@ if [ ! -f ".env.local" ]; then
         print_warning ".env.example not found. Creating basic .env.local template..."
         cat > .env.local << EOF
 # MongoDB Configuration
-MONGO_URI=mongodb://localhost:27017/buildestate
+MONGO_URI=mongodb://localhost:27017/odibrick
 
 # JWT Configuration
 JWT_SECRET=your-super-secret-jwt-key-here

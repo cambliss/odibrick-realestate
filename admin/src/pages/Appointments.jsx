@@ -110,9 +110,9 @@ const Appointments = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen pt-8 flex items-center justify-center bg-[#FAF8F4]">
+      <div className="min-h-screen pt-8 flex items-center justify-center bg-[#FFFFFF]">
         <div className="text-center">
-          <div className="w-12 h-12 border-3 border-[#D4755B] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
+          <div className="w-12 h-12 border-3 border-[#004AAD] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
           <p className="text-[#5A5856] font-medium">Loading appointments...</p>
         </div>
       </div>
@@ -120,7 +120,7 @@ const Appointments = () => {
   }
 
   return (
-    <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FAF8F4]">
+    <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -131,22 +131,22 @@ const Appointments = () => {
 
         {/* Filter Tabs + Search */}
         <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-          className="bg-white rounded-2xl p-4 border border-[#E6D5C3] shadow-card mb-6">
+          className="bg-white rounded-2xl p-4 border border-[#E2E8F0] shadow-card mb-6">
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             {/* Status Tabs */}
-            <div className="flex items-center gap-1 bg-[#FAF8F4] rounded-xl p-1">
+            <div className="flex items-center gap-1 bg-[#FFFFFF] rounded-xl p-1">
               {["all", "pending", "confirmed", "cancelled"].map((status) => (
                 <button key={status} onClick={() => setFilter(status)}
                   className={cn(
                     "px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 capitalize",
                     filter === status
-                      ? "bg-[#1C1B1A] text-[#FAF8F4] shadow-sm"
+                      ? "bg-[#1C1B1A] text-[#FFFFFF] shadow-sm"
                       : "text-[#5A5856] hover:text-[#1C1B1A]"
                   )}>
                   {status === "all" ? "All" : status.charAt(0).toUpperCase() + status.slice(1)}
                   <span className={cn(
                     "ml-1.5 text-xs px-1.5 py-0.5 rounded-full",
-                    filter === status ? "bg-white/20" : "bg-[#E6D5C3] text-[#5A5856]"
+                    filter === status ? "bg-white/20" : "bg-[#E2E8F0] text-[#5A5856]"
                   )}>
                     {counts[status]}
                   </span>
@@ -159,14 +159,14 @@ const Appointments = () => {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9CA3AF]" />
               <input type="text" placeholder="Search by property, client..."
                 value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 bg-[#FAF8F4] border border-[#E6D5C3] rounded-xl text-sm text-[#1C1B1A] placeholder-[#9CA3AF] outline-none focus:border-[#D4755B] focus:ring-2 focus:ring-[#D4755B]/15 transition-all" />
+                className="w-full pl-9 pr-4 py-2.5 bg-[#FFFFFF] border border-[#E2E8F0] rounded-xl text-sm text-[#1C1B1A] placeholder-[#9CA3AF] outline-none focus:border-[#004AAD] focus:ring-2 focus:ring-[#004AAD]/15 transition-all" />
             </div>
           </div>
         </motion.div>
 
         {/* Table */}
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}
-          className="bg-white rounded-2xl border border-[#E6D5C3] shadow-card overflow-hidden">
+          className="bg-white rounded-2xl border border-[#E2E8F0] shadow-card overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
@@ -178,18 +178,18 @@ const Appointments = () => {
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#F5F1E8]">
+              <tbody className="divide-y divide-[#F8FAFC]">
                 <AnimatePresence>
                   {filteredAppointments.map((appointment) => (
                     <motion.tr key={appointment._id}
                       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                      className="hover:bg-[#FAF8F4] transition-colors duration-150">
+                      className="hover:bg-[#FFFFFF] transition-colors duration-150">
 
                       {/* Property */}
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2.5">
-                          <div className="w-8 h-8 bg-[#D4755B]/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                            <Home className="w-4 h-4 text-[#D4755B]" />
+                          <div className="w-8 h-8 bg-[#004AAD]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <Home className="w-4 h-4 text-[#004AAD]" />
                           </div>
                           <div>
                             <p className="text-sm font-semibold text-[#1C1B1A] line-clamp-1">
@@ -248,13 +248,13 @@ const Appointments = () => {
                             <input type="url" value={meetingLink}
                               onChange={(e) => setMeetingLink(e.target.value)}
                               placeholder="Paste meeting link..."
-                              className="px-2.5 py-1.5 border border-[#E6D5C3] rounded-lg text-xs w-40 outline-none focus:border-[#D4755B] focus:ring-1 focus:ring-[#D4755B]/20" />
+                              className="px-2.5 py-1.5 border border-[#E2E8F0] rounded-lg text-xs w-40 outline-none focus:border-[#004AAD] focus:ring-1 focus:ring-[#004AAD]/20" />
                             <button onClick={() => handleMeetingLinkUpdate(appointment._id)}
-                              className="p-1.5 bg-[#D4755B] text-white rounded-lg hover:bg-[#C05E44] transition-colors">
+                              className="p-1.5 bg-[#004AAD] text-white rounded-lg hover:bg-[#003B8B] transition-colors">
                               <Send className="w-3.5 h-3.5" />
                             </button>
                             <button onClick={() => { setEditingMeetingLink(null); setMeetingLink(""); }}
-                              className="p-1.5 bg-[#E6D5C3] text-[#5A5856] rounded-lg hover:bg-[#D4B99A] transition-colors">
+                              className="p-1.5 bg-[#E2E8F0] text-[#5A5856] rounded-lg hover:bg-[#D4B99A] transition-colors">
                               <X className="w-3.5 h-3.5" />
                             </button>
                           </div>
@@ -262,7 +262,7 @@ const Appointments = () => {
                           <div className="flex items-center gap-2">
                             {appointment.meetingLink ? (
                               <a href={appointment.meetingLink} target="_blank" rel="noopener noreferrer"
-                                className="flex items-center gap-1 text-xs text-[#D4755B] hover:text-[#C05E44] font-medium underline underline-offset-2">
+                                className="flex items-center gap-1 text-xs text-[#004AAD] hover:text-[#003B8B] font-medium underline underline-offset-2">
                                 <LinkIcon className="w-3.5 h-3.5" />
                                 View Link
                               </a>
@@ -271,7 +271,7 @@ const Appointments = () => {
                             )}
                             {appointment.status === "confirmed" && (
                               <button onClick={() => { setEditingMeetingLink(appointment._id); setMeetingLink(appointment.meetingLink || ""); }}
-                                className="p-1 text-[#9CA3AF] hover:text-[#D4755B] transition-colors rounded">
+                                className="p-1 text-[#9CA3AF] hover:text-[#004AAD] transition-colors rounded">
                                 <LinkIcon className="w-3.5 h-3.5" />
                               </button>
                             )}
@@ -313,8 +313,8 @@ const Appointments = () => {
 
           {filteredAppointments.length === 0 && (
             <div className="text-center py-16">
-              <div className="w-14 h-14 bg-[#F5F1E8] rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-7 h-7 text-[#E6D5C3]" />
+              <div className="w-14 h-14 bg-[#F8FAFC] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <Calendar className="w-7 h-7 text-[#E2E8F0]" />
               </div>
               <h3 className="text-base font-semibold text-[#1C1B1A] mb-1">No appointments found</h3>
               <p className="text-sm text-[#9CA3AF]">

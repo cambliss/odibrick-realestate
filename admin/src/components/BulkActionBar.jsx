@@ -83,7 +83,7 @@ const BulkActionBar = ({
       case 'danger':
         return `${base} bg-red-600 text-white hover:bg-red-700`;
       default:
-        return `${base} bg-[#D4755B] text-white hover:bg-[#C05E44]`;
+        return `${base} bg-[#004AAD] text-white hover:bg-[#003B8B]`;
     }
   };
 
@@ -97,12 +97,12 @@ const BulkActionBar = ({
           transition={{ type: "spring", damping: 25, stiffness: 200 }}
           className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50"
         >
-          <div className="bg-white rounded-2xl border border-[#E6E0DA] shadow-2xl p-4">
+          <div className="bg-white rounded-2xl border border-[#E2E8F0] shadow-2xl p-4">
             <div className="flex items-center gap-4">
               {/* Selection Info */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#D4755B]/10 rounded-xl flex items-center justify-center">
-                  <Users className="w-5 h-5 text-[#D4755B]" />
+                <div className="w-10 h-10 bg-[#004AAD]/10 rounded-xl flex items-center justify-center">
+                  <Users className="w-5 h-5 text-[#004AAD]" />
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#1C1B1A]">
@@ -133,7 +133,7 @@ const BulkActionBar = ({
                 {/* Clear Selection */}
                 <button
                   onClick={onClearSelection}
-                  className="p-2.5 border border-[#E6E0DA] text-[#5A5856] rounded-xl hover:bg-[#F5F1E8] transition-colors"
+                  className="p-2.5 border border-[#E2E8F0] text-[#5A5856] rounded-xl hover:bg-[#F8FAFC] transition-colors"
                   title="Clear selection"
                 >
                   <X className="w-4 h-4" />

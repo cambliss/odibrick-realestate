@@ -12,9 +12,9 @@ import AboutCTASection from '../components/about/AboutCTASection';
 
 const AboutUsPage: React.FC = () => {
   useSEO({
-    title: 'About BuildEstate — AI-Powered Real Estate in India',
-    description: 'BuildEstate is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and technology.',
-    url: 'https://buildestate.vercel.app/about',
+    title: 'About Odibrick — AI-Powered Real Estate in India',
+    description: 'Odibrick is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and technology.',
+    url: 'https://odibrick.vercel.app/about',
   });
 
   return (

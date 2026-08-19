@@ -104,13 +104,13 @@ const Navbar = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-9 h-9 bg-[#D4755B] rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-terracotta transition-all duration-300"
+              className="w-9 h-9 bg-[#004AAD] rounded-lg flex items-center justify-center shadow-lg group-hover:shadow-[#004AAD]/25 transition-all duration-300"
             >
               <Home className="h-5 w-5 text-white" />
             </motion.div>
             <div>
-              <span className="text-lg font-bold text-[#FAF8F4] tracking-tight">
-                BuildEstate
+              <span className="text-lg font-bold text-[#FFFFFF] tracking-tight">
+                Odibrick
               </span>
               <div className="text-[10px] text-[#9CA3AF] font-medium uppercase tracking-widest leading-none">
                 Admin Panel
@@ -127,8 +127,8 @@ const Navbar = () => {
                 className={cn(
                   'relative flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200',
                   isActive(item.path)
-                    ? 'text-[#FAF8F4] bg-[#D4755B]'
-                    : 'text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10'
+                    ? 'text-[#FFFFFF] bg-[#004AAD]'
+                    : 'text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10'
                 )}
               >
                 <item.icon className="h-4 w-4" />
@@ -136,7 +136,7 @@ const Navbar = () => {
                 {isActive(item.path) && (
                   <motion.div
                     layoutId="activeNavTab"
-                    className="absolute inset-0 bg-[#D4755B] rounded-lg"
+                    className="absolute inset-0 bg-[#004AAD] rounded-lg"
                     style={{ zIndex: -1 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
@@ -146,7 +146,7 @@ const Navbar = () => {
             {/* Secondary actions dropdown */}
             <div className="relative">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 rounded-lg text-sm font-medium transition-all duration-200"
+                className="flex items-center gap-1 px-3 py-2 text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 rounded-lg text-sm font-medium transition-all duration-200"
                 onClick={toggleMore}
               >
                 <Settings className="h-4 w-4" />
@@ -168,7 +168,7 @@ const Navbar = () => {
                         key={item.path}
                         to={item.path}
                         onClick={() => setIsMoreOpen(false)}
-                        className="flex items-center gap-2 px-4 py-2 text-sm text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 transition-colors"
+                        className="flex items-center gap-2 px-4 py-2 text-sm text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 transition-colors"
                       >
                         <item.icon className="h-4 w-4" />
                         {item.label}
@@ -186,10 +186,10 @@ const Navbar = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative p-2 text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 rounded-lg transition-all duration-200"
+              className="relative p-2 text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 rounded-lg transition-all duration-200"
             >
               <Bell className="h-5 w-5" />
-              <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-[#D4755B] rounded-full" />
+              <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-[#004AAD] rounded-full" />
             </motion.button>
 
             {/* Profile Dropdown */}
@@ -200,11 +200,11 @@ const Navbar = () => {
                 whileTap={{ scale: 0.98 }}
                 className="flex items-center gap-2.5 pl-2 pr-3 py-1.5 rounded-lg hover:bg-white/10 transition-all duration-200"
               >
-                <div className="h-8 w-8 bg-[#D4755B] rounded-lg flex items-center justify-center">
+                <div className="h-8 w-8 bg-[#004AAD] rounded-lg flex items-center justify-center">
                   <User className="h-4 w-4 text-white" />
                 </div>
                 <div className="text-left hidden lg:block">
-                  <div className="text-sm font-semibold text-[#FAF8F4]">Admin</div>
+                  <div className="text-sm font-semibold text-[#FFFFFF]">Admin</div>
                   <div className="text-xs text-[#9CA3AF]">Administrator</div>
                 </div>
                 <ChevronDown
@@ -225,10 +225,10 @@ const Navbar = () => {
                     className="absolute right-0 mt-2 w-52 bg-[#1C1B1A] border border-white/10 rounded-xl shadow-2xl py-2 overflow-hidden"
                   >
                     <div className="px-4 py-3 border-b border-white/10">
-                      <div className="text-sm font-semibold text-[#FAF8F4]">Admin Panel</div>
+                      <div className="text-sm font-semibold text-[#FFFFFF]">Admin Panel</div>
                       <div className="text-xs text-[#9CA3AF] mt-0.5">Manage your properties</div>
                     </div>
-                    <button className="w-full text-left px-4 py-2.5 text-sm text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 flex items-center gap-2.5 transition-colors">
+                    <button className="w-full text-left px-4 py-2.5 text-sm text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 flex items-center gap-2.5 transition-colors">
                       <Settings className="h-4 w-4" />
                       Settings
                     </button>
@@ -251,7 +251,7 @@ const Navbar = () => {
               onClick={toggleMenu}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="p-2 text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 rounded-lg transition-all duration-200"
+              className="p-2 text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 rounded-lg transition-all duration-200"
             >
               <AnimatePresence mode="wait">
                 {isMenuOpen ? (
@@ -288,8 +288,8 @@ const Navbar = () => {
                   className={cn(
                     'flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-all duration-200',
                     isActive(item.path)
-                      ? 'bg-[#D4755B] text-white'
-                      : 'text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10'
+                      ? 'bg-[#004AAD] text-white'
+                      : 'text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10'
                   )}
                 >
                   <item.icon className="h-5 w-5" />
@@ -307,8 +307,8 @@ const Navbar = () => {
                     className={cn(
                       'flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200',
                       isActive(item.path)
-                        ? 'bg-[#D4755B] text-white'
-                        : 'text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10'
+                        ? 'bg-[#004AAD] text-white'
+                        : 'text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10'
                     )}
                   >
                     <item.icon className="h-4 w-4" />
@@ -320,11 +320,11 @@ const Navbar = () => {
               {/* Mobile Profile */}
               <div className="pt-3 mt-3 border-t border-white/10">
                 <div className="flex items-center gap-3 px-4 py-3 mb-1">
-                  <div className="h-10 w-10 bg-[#D4755B] rounded-xl flex items-center justify-center">
+                  <div className="h-10 w-10 bg-[#004AAD] rounded-xl flex items-center justify-center">
                     <User className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-[#FAF8F4]">Admin</div>
+                    <div className="text-sm font-semibold text-[#FFFFFF]">Admin</div>
                     <div className="text-xs text-[#9CA3AF]">Administrator</div>
                   </div>
                 </div>

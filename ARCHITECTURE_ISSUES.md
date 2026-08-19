@@ -1,6 +1,6 @@
-# BuildEstate - Architecture Issues Document
+# Odibrick - Architecture Issues Document
 
-> **Project:** Real Estate Website (BuildEstate)
+> **Project:** Real Estate Website (Odibrick)
 > **GitHub:** [github.com/AAYUSH412/Real-Estate-Website](https://github.com/AAYUSH412/Real-Estate-Website)
 > **Type:** Open-source project
 > **Structure:** Monorepo with 3 apps - `admin/`, `backend/`, `frontend/`
@@ -12,7 +12,7 @@
 
 | App | URL |
 |-----|-----|
-| **Frontend** | https://buildestate.vercel.app |
+| **Frontend** | https://odibrick.vercel.app |
 | **Backend** | https://real-estate-website-backend-zfu7.onrender.com |
 | **Admin** | https://real-estate-website-admin-sage.vercel.app/dashboard |
 
@@ -425,9 +425,9 @@ Inconsistent naming makes configuration confusing and error-prone.
 
 | Purpose | Admin | Frontend |
 |---------|-------|----------|
-| Auth Token | `token` | `buildestate_token` |
+| Auth Token | `token` | `odibrick_token` |
 | Admin Flag | `isAdmin` | N/A |
-| User Data | N/A | `buildestate_user` |
+| User Data | N/A | `odibrick_user` |
 
 **Files:**
 - `admin/src/config/constants.js:15-16`
@@ -1300,7 +1300,7 @@ export const searchProperties = async (req, res) => {
 - ✅ Error stack traces in structured format
 - ✅ Request ID correlation via `X-Request-ID` header
 - ✅ Child loggers with request context
-- ✅ Service metadata (`buildestate-api`)
+- ✅ Service metadata (`odibrick-api`)
 
 **Dependencies Added:**
 ```json
@@ -1538,9 +1538,9 @@ PORT=4000
 MONGO_URI=mongodb+srv://...
 JWT_SECRET=your-secret-key
 BREVO_API_KEY=your-brevo-key
-FRONTEND_URL=https://buildestate.vercel.app
+FRONTEND_URL=https://odibrick.vercel.app
 ADMIN_URL=https://real-estate-website-admin-sage.vercel.app
-WEBSITE_URL=https://buildestate.vercel.app
+WEBSITE_URL=https://odibrick.vercel.app
 ```
 
 ### Frontend (Vercel)

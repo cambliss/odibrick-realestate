@@ -12,24 +12,24 @@ const AboutAISection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#F2EFE9] border-t border-[#E6E0DA] py-24">
+    <section className="bg-[#F2EFE9] border-t border-[#E2E8F0] py-24">
       <div className="max-w-[1280px] mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left - Content */}
           <div>
             {/* Label */}
             <div className="mb-6">
-              <p className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[1.2px]">
+              <p className="font-space-mono text-xs text-[#004AAD] uppercase tracking-[1.2px]">
                 The Engine
               </p>
             </div>
 
             {/* Headline */}
             <h2 className="mb-6">
-              <span className="font-syne text-5xl leading-[48px] text-[#221410] block font-semibold">
+              <span className="font-syne text-5xl leading-[48px] text-[#1F2937] block font-semibold">
                 AI-Powered
               </span>
-              <span className="font-fraunces font-light italic text-5xl leading-[48px] text-[#D4755B] block">
+              <span className="font-fraunces font-light italic text-5xl leading-[48px] text-[#004AAD] block">
                 Property Intelligence
               </span>
             </h2>
@@ -47,9 +47,9 @@ const AboutAISection: React.FC = () => {
               {features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <div className="w-6 h-6 flex items-center justify-center">
-                    <Check className="w-5 h-5 text-[#D4755B]" />
+                    <Check className="w-5 h-5 text-[#004AAD]" />
                   </div>
-                  <span className="font-manrope font-extralight text-base text-[#221410]">
+                  <span className="font-manrope font-extralight text-base text-[#1F2937]">
                     {feature}
                   </span>
                 </li>
@@ -59,13 +59,13 @@ const AboutAISection: React.FC = () => {
             {/* Link */}
             <a 
               href="#" 
-              className="inline-flex items-center gap-2 border-b border-[#221410] pb-1 group hover:border-[#D4755B] transition-[border-color]"
+              className="inline-flex items-center gap-2 border-b border-[#1F2937] pb-1 group hover:border-[#004AAD] transition-[border-color]"
             >
-              <span className="font-space-mono text-sm text-[#221410] group-hover:text-[#D4755B] transition-[color]">
+              <span className="font-space-mono text-sm text-[#1F2937] group-hover:text-[#004AAD] transition-[color]">
                 Learn about our Tech
               </span>
 
-              <ArrowRight className="w-4 h-4 text-[#221410] group-hover:text-[#D4755B] transition-[color]" />
+              <ArrowRight className="w-4 h-4 text-[#1F2937] group-hover:text-[#004AAD] transition-[color]" />
             </a>
           </div>
 
@@ -87,10 +87,10 @@ const AboutAISection: React.FC = () => {
               />
 
               {/* AI Match Card Overlay */}
-              <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/90 border border-[#E6E0DA] rounded p-4 flex items-center gap-4">
+              <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/90 border border-[#E2E8F0] rounded p-4 flex items-center gap-4">
                 {/* Icon */}
-                <div className="w-10 h-[46px] bg-[rgba(236,70,19,0.1)] rounded-full flex items-center justify-center flex-shrink-0">
-                  <Sparkles className="w-6 h-6 text-[#D4755B]" />
+                <div className="w-10 h-[46px] bg-[rgba(0, 74, 173, 0.1)] rounded-full flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-6 h-6 text-[#004AAD]" />
                 </div>
 
                 {/* Content */}
@@ -98,7 +98,7 @@ const AboutAISection: React.FC = () => {
                   <p className="font-space-mono text-xs text-[#6b7280] uppercase mb-1">
                     Match Score
                   </p>
-                  <p className="font-manrope font-extralight text-lg text-[#221410]">
+                  <p className="font-manrope font-extralight text-lg text-[#1F2937]">
                     98.5% Compatibility
                   </p>
                 </div>

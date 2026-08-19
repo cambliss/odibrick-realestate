@@ -1,14 +1,14 @@
 {
-  "name": "BuildEstate - AI-Powered Real Estate",
-  "short_name": "BuildEstate",
+  "name": "Odibrick - AI-Powered Real Estate",
+  "short_name": "Odibrick",
   "description": "AI-powered luxury real estate platform connecting you with your dream home",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
   "start_url": "/",
-  "background_color": "#FAF8F4",
-  "theme_color": "#D4755B",
+  "background_color": "#FFFFFF",
+  "theme_color": "#004AAD",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

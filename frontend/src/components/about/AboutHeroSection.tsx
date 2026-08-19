@@ -3,7 +3,7 @@ import mainAboutImage from '../../images/Main about image.jpg';
 
 const AboutHeroSection: React.FC = () => {
   return (
-    <section className="relative bg-[#C05621] h-[480px] overflow-hidden">
+    <section className="relative bg-[#003B8B] h-[480px] overflow-hidden">
       {/* Background Pattern */}
       <div 
         className="absolute inset-0 opacity-20 mix-blend-overlay"
@@ -29,7 +29,7 @@ const AboutHeroSection: React.FC = () => {
           <div className="w-24 h-px bg-[rgba(242,239,233,0.4)] mx-auto mb-8" />
           
           <p data-speakable className="font-manrope font-extralight text-lg text-[rgba(242,239,233,0.9)] tracking-wide">
-            BuildEstate is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune — where data-driven precision meets the art of living.
+            Odibrick is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune — where data-driven precision meets the art of living.
           </p>
         </div>
       </div>

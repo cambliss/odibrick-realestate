@@ -43,9 +43,9 @@ const PropertyDetailsPage: React.FC = () => {
     title: property ? `${property.title} - ${property.location}` : 'Property Details',
     description: property
       ? `${property.title} in ${property.location}. ${property.beds} beds, ${property.baths} baths, ${property.sqft} sqft. ${property.type}.`
-      : 'View property details on BuildEstate.',
+      : 'View property details on Odibrick.',
     image: property?.image?.[0] || undefined,
-    url: property ? `https://buildestate.vercel.app/property/${property._id}` : undefined,
+    url: property ? `https://odibrick.vercel.app/property/${property._id}` : undefined,
     type: 'article',
   });
 
@@ -97,11 +97,11 @@ const PropertyDetailsPage: React.FC = () => {
         <Navbar />
         <div className="flex items-center justify-center py-32">
           <div className="text-center">
-            <span className="material-icons text-5xl text-[#D4755B] mb-4">error_outline</span>
+            <span className="material-icons text-5xl text-[#004AAD] mb-4">error_outline</span>
             <p className="font-manrope text-xl text-[#374151] mb-4">{error || 'Property not found'}</p>
             <Link
               to="/properties"
-              className="bg-[#D4755B] text-white font-manrope font-bold px-8 py-3 rounded-lg hover:bg-[#B86851] transition-all inline-block"
+              className="bg-[#004AAD] text-white font-manrope font-bold px-8 py-3 rounded-lg hover:bg-[#003B8B] transition-all inline-block"
             >
               Back to Properties
             </Link>
@@ -135,7 +135,7 @@ const PropertyDetailsPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-[#FAF8F4] min-h-screen">
+    <div className="bg-[#FFFFFF] min-h-screen">
       {/* Property Structured Data for SEO */}
       <StructuredData
         type="property"
@@ -193,7 +193,7 @@ const PropertyDetailsPage: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Left Column - Main Content */}
             <div className="lg:col-span-2">
-              <div className="bg-white border border-[#E6E0DA] rounded-2xl p-8 shadow-sm">
+              <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
                 {/* About Section */}
                 <PropertyAbout description={property.description} />
 

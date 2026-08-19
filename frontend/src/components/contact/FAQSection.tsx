@@ -22,7 +22,7 @@ const FAQSection: React.FC = () => {
     },
     {
       id: 3,
-      question: "Can I list my property exclusively with BuildEstate?",
+      question: "Can I list my property exclusively with Odibrick?",
       answer: "Yes, we offer exclusive listing agreements with premium marketing benefits including professional photography, virtual tours, AI-powered listing optimization, and dedicated property consultant support throughout the selling process."
     },
     {
@@ -42,16 +42,16 @@ const FAQSection: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="flex justify-center mb-3">
-            <span className="font-space-mono text-xs text-[#D4755B] uppercase tracking-widest">
+            <span className="font-space-mono text-xs text-[#004AAD] uppercase tracking-widest">
               Help Center
             </span>
           </div>
-          <h2 className="font-syne font-bold text-4xl text-[#221410] mb-4">
+          <h2 className="font-syne font-bold text-4xl text-[#1F2937] mb-4">
             Common Questions
           </h2>
           <p className="font-manrope text-lg text-[#4B5563] leading-relaxed max-w-[640px] mx-auto">
             Find quick answers to your most pressing questions about buying, selling, and
-            partnering with BuildEstate.
+            partnering with Odibrick.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const FAQSection: React.FC = () => {
           {faqs.map((faq, index) => (
             <div 
               key={faq.id}
-              className="bg-[#F9F7F2] border border-[#E6E0DA] rounded-xl overflow-hidden transition-all"
+              className="bg-[#F9F7F2] border border-[#E2E8F0] rounded-xl overflow-hidden transition-all"
             >
               {/* Question */}
               <button
@@ -68,19 +68,19 @@ const FAQSection: React.FC = () => {
                 className="w-full flex items-center gap-4 p-6 text-left hover:bg-[#F2EFE9] transition-[background-color]"
               >
                 {/* Number Badge */}
-                <div className="w-8 h-8 bg-[#F9F7F2] border border-[#E6E0DA] rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="font-syne font-bold text-sm text-[#D4755B]">
+                <div className="w-8 h-8 bg-[#F9F7F2] border border-[#E2E8F0] rounded-full flex items-center justify-center flex-shrink-0">
+                  <span className="font-syne font-bold text-sm text-[#004AAD]">
                     {String(faq.id).padStart(2, '0')}
                   </span>
                 </div>
 
                 {/* Question Text */}
-                <h3 className="flex-1 font-syne font-bold text-lg text-[#221410]">
+                <h3 className="flex-1 font-syne font-bold text-lg text-[#1F2937]">
                   {faq.question}
                 </h3>
 
                 {/* Expand/Collapse Icon */}
-                <span className={`material-icons text-[#D4755B] transition-transform ${
+                <span className={`material-icons text-[#004AAD] transition-transform ${
                   openIndex === index ? 'rotate-180' : ''
                 }`}>
                   expand_more
@@ -103,7 +103,7 @@ const FAQSection: React.FC = () => {
         <div className="text-center mt-12">
           <a 
             href="#" 
-            className="inline-flex items-center gap-2 font-manrope font-bold text-base text-[#D4755B] hover:text-[#C05621] transition-[color] group"
+            className="inline-flex items-center gap-2 font-manrope font-bold text-base text-[#004AAD] hover:text-[#003B8B] transition-[color] group"
           >
             <span>Get Full Knowledge Base</span>
             <span className="material-icons text-lg group-hover:translate-x-1 transition-transform">

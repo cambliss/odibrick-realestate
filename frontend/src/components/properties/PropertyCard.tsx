@@ -18,7 +18,7 @@ interface PropertyCardProps {
 const badgeColor: Record<string, string> = {
   'FOR RENT': 'bg-blue-500',
   'SOLD': 'bg-[#6B7280]',
-  'HOT': 'bg-[#D4755B]',
+  'HOT': 'bg-[#004AAD]',
 };
 
 const PropertyCard: React.FC<PropertyCardProps> = ({
@@ -27,11 +27,11 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
   const [favorited, setFavorited] = useState(false);
 
   return (
-    <Link to={`/property/${id}`} className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#D4755B] rounded-2xl">
+    <Link to={`/property/${id}`} className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#004AAD] rounded-2xl">
       <article className="bg-white rounded-2xl overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-shadow duration-300">
 
         {/* ── Image ──────────────────────────────────────── */}
-        <div className="relative aspect-[4/3] overflow-hidden bg-[#E6E0DA]">
+        <div className="relative aspect-[4/3] overflow-hidden bg-[#E2E8F0]">
           <img
             src={image}
             alt={name}
@@ -58,7 +58,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             className="absolute top-3 right-3 w-9 h-9 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/40 transition-colors duration-200 active:scale-[0.96]"
           >
             <Heart
-              className={`w-4 h-4 transition-colors duration-200 ${favorited ? 'text-[#D4755B] fill-[#D4755B]' : 'text-white'}`}
+              className={`w-4 h-4 transition-colors duration-200 ${favorited ? 'text-[#004AAD] fill-[#004AAD]' : 'text-white'}`}
             />
           </button>
 
@@ -73,13 +73,13 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         {/* ── Content ────────────────────────────────────── */}
         <div className="px-4 py-4">
           {/* Name */}
-          <h3 className="font-fraunces text-base font-semibold text-[#221410] leading-snug mb-1.5 text-wrap-balance line-clamp-2">
+          <h3 className="font-fraunces text-base font-semibold text-[#1F2937] leading-snug mb-1.5 text-wrap-balance line-clamp-2">
             {name}
           </h3>
 
           {/* Location */}
           <div className="flex items-center gap-1 mb-3">
-            <MapPin className="w-3.5 h-3.5 text-[#D4755B] shrink-0" aria-hidden />
+            <MapPin className="w-3.5 h-3.5 text-[#004AAD] shrink-0" aria-hidden />
             <span className="font-manrope text-xs text-[#6B7280] truncate">{location}</span>
           </div>
 
@@ -95,7 +95,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
           {/* Type tag — only first tag, subtle */}
           {tags[0] && (
             <div className="mt-3">
-              <span className="inline-block font-manrope text-[10px] uppercase tracking-wider text-[#9CA3AF] border border-[#E6E0DA] rounded px-2 py-0.5">
+              <span className="inline-block font-manrope text-[10px] uppercase tracking-wider text-[#9CA3AF] border border-[#E2E8F0] rounded px-2 py-0.5">
                 {tags[0]}
               </span>
             </div>

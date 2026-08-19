@@ -99,7 +99,7 @@ const Lightbox: React.FC<{
               key={i}
               onClick={e => { e.stopPropagation(); setCurrent(i); }}
               className={`w-12 h-8 rounded-md overflow-hidden transition-all ${
-                i === current ? 'ring-2 ring-[#D4755B] opacity-100' : 'opacity-40 hover:opacity-70'
+                i === current ? 'ring-2 ring-[#004AAD] opacity-100' : 'opacity-40 hover:opacity-70'
               }`}
             >
               <img src={img} alt="" className="w-full h-full object-cover" />
@@ -241,7 +241,7 @@ const PropertyHeroImage: React.FC<PropertyHeroImageProps> = ({ images = [], imag
         {/* "Show all photos" button */}
         <button
           onClick={() => open(0)}
-          className="absolute bottom-4 right-4 flex items-center gap-2 bg-white/90 backdrop-blur-sm hover:bg-white text-[#221410] font-manrope font-semibold text-sm px-4 py-2 rounded-xl shadow-md transition-all active:scale-[0.96]"
+          className="absolute bottom-4 right-4 flex items-center gap-2 bg-white/90 backdrop-blur-sm hover:bg-white text-[#1F2937] font-manrope font-semibold text-sm px-4 py-2 rounded-xl shadow-md transition-all active:scale-[0.96]"
         >
           <Images className="w-4 h-4" />
           Show all {imgs.length} photos

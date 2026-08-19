@@ -43,7 +43,7 @@ const AppLayout = () => {
   });
 
   return (
-    <div className="min-h-screen bg-[#FAF8F4] flex">
+    <div className="min-h-screen bg-[#FFFFFF] flex">
       {/* Sidebar */}
       {!isLoginPage && (
         <Sidebar

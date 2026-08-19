@@ -10,7 +10,7 @@ const AboutHeritageSection: React.FC = () => {
           {/* Left - Image with Border */}
           <div className="relative">
             {/* Inner border box */}
-            <div className="border-2 border-[rgba(236,70,19,0.2)] rounded-xl p-4">
+            <div className="border-2 border-[rgba(0, 74, 173, 0.2)] rounded-xl p-4">
               {/* Image container with overlay */}
               <div className="relative h-[735px] bg-[rgba(242,239,233,0.3)] border border-[rgba(230,224,218,0.5)] rounded-lg overflow-hidden">
                 <div className="absolute inset-4">
@@ -33,17 +33,17 @@ const AboutHeritageSection: React.FC = () => {
           <div className="lg:pt-16">
             {/* Label */}
             <div className="mb-6">
-              <p className="font-space-mono text-xs text-[#D4755B] uppercase tracking-[2.4px]">
+              <p className="font-space-mono text-xs text-[#004AAD] uppercase tracking-[2.4px]">
                 Our Heritage
               </p>
             </div>
 
             {/* Headline */}
             <h2 className="mb-6">
-              <span className="font-syne text-[40px] leading-[50px] text-[#221410] block font-semibold">
+              <span className="font-syne text-[40px] leading-[50px] text-[#1F2937] block font-semibold">
                 Redefining the Real Estate Landscape with
               </span>
-              <span className="font-fraunces italic text-[40px] leading-[50px] text-[#D4755B] block">
+              <span className="font-fraunces italic text-[40px] leading-[50px] text-[#004AAD] block">
                 Better Property Discovery
               </span>
             </h2>
@@ -51,7 +51,7 @@ const AboutHeritageSection: React.FC = () => {
             {/* Description Paragraphs */}
             <div className="space-y-6 mb-8">
               <p className="font-manrope font-extralight text-base leading-[26px] text-[#4b5563]">
-                Founded by architects and data scientists, BuildEstate emerged from a
+                Founded by architects and data scientists, Odibrick emerged from a
                 simple observation: the search for a home had become a transaction, losing
                 the emotional resonance of finding one's sanctuary.
               </p>
@@ -64,8 +64,8 @@ const AboutHeritageSection: React.FC = () => {
             </div>
 
             {/* Blockquote */}
-            <blockquote className="border-l-4 border-[#D4755B] pl-6 mb-8">
-              <p className="font-fraunces italic text-2xl leading-8 text-[#D4755B]">
+            <blockquote className="border-l-4 border-[#004AAD] pl-6 mb-8">
+              <p className="font-fraunces italic text-2xl leading-8 text-[#004AAD]">
                 "We believe finding a home should be inspiring,
                 not exhausting."
               </p>
@@ -74,13 +74,13 @@ const AboutHeritageSection: React.FC = () => {
             {/* Link */}
             <a 
               href="#team" 
-              className="inline-flex items-center gap-2 border-b border-[#221410] pb-1 group hover:border-[#D4755B] transition-[border-color]"
+              className="inline-flex items-center gap-2 border-b border-[#1F2937] pb-1 group hover:border-[#004AAD] transition-[border-color]"
             >
-              <span className="font-space-mono text-sm text-[#221410] group-hover:text-[#D4755B] transition-[color]">
+              <span className="font-space-mono text-sm text-[#1F2937] group-hover:text-[#004AAD] transition-[color]">
                 Meet the Architects
               </span>
 
-              <ArrowRight className="w-4 h-4 text-[#221410] group-hover:text-[#D4755B] transition-[color]" />
+              <ArrowRight className="w-4 h-4 text-[#1F2937] group-hover:text-[#004AAD] transition-[color]" />
             </a>
           </div>
         </div>

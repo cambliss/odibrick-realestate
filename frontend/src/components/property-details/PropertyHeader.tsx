@@ -51,18 +51,18 @@ const PropertyHeader: React.FC<PropertyHeaderProps> = ({
       </div>
 
       {/* Name */}
-      <h1 className="font-fraunces text-3xl md:text-4xl font-semibold text-[#221410] leading-tight mb-2 text-wrap-balance">
+      <h1 className="font-fraunces text-3xl md:text-4xl font-semibold text-[#1F2937] leading-tight mb-2 text-wrap-balance">
         {name}
       </h1>
 
       {/* Location */}
       <div className="flex items-center gap-1.5 mb-5">
-        <MapPin className="w-4 h-4 text-[#D4755B] shrink-0" aria-hidden />
+        <MapPin className="w-4 h-4 text-[#004AAD] shrink-0" aria-hidden />
         <span className="font-manrope text-sm text-[#6B7280]">{location}</span>
       </div>
 
       {/* Specs — dot-separated inline */}
-      <div className="flex items-center gap-2 font-manrope text-sm text-[#374151] border-b border-[#E6E0DA] pb-6">
+      <div className="flex items-center gap-2 font-manrope text-sm text-[#374151] border-b border-[#E2E8F0] pb-6">
         <span><strong className="font-semibold tabular-nums">{beds}</strong> {beds === 1 ? 'Bedroom' : 'Bedrooms'}</span>
         <span className="text-[#D4C4BC]">·</span>
         <span><strong className="font-semibold tabular-nums">{baths}</strong> {baths === 1 ? 'Bathroom' : 'Bathrooms'}</span>

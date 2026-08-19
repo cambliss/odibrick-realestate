@@ -47,9 +47,9 @@ const ActivityLogDetailModal = ({
   };
 
   const DetailRow = ({ label, value, icon: Icon }) => (
-    <div className="flex items-start gap-3 py-3 border-b border-[#F5F1E8] last:border-0">
+    <div className="flex items-start gap-3 py-3 border-b border-[#F8FAFC] last:border-0">
       {Icon && (
-        <div className="w-8 h-8 bg-[#F5F1E8] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+        <div className="w-8 h-8 bg-[#F8FAFC] rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
           <Icon className="w-4 h-4 text-[#5A5856]" />
         </div>
       )}
@@ -76,10 +76,10 @@ const ActivityLogDetailModal = ({
           className="bg-white rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-hidden shadow-2xl"
         >
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-[#E6E0DA]">
+          <div className="flex items-center justify-between p-6 border-b border-[#E2E8F0]">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#D4755B]/10 rounded-xl flex items-center justify-center">
-                <Info className="w-5 h-5 text-[#D4755B]" />
+              <div className="w-10 h-10 bg-[#004AAD]/10 rounded-xl flex items-center justify-center">
+                <Info className="w-5 h-5 text-[#004AAD]" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-[#1C1B1A]">Activity Details</h3>
@@ -88,7 +88,7 @@ const ActivityLogDetailModal = ({
             </div>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-[#F5F1E8] rounded-lg transition-colors"
+              className="p-2 hover:bg-[#F8FAFC] rounded-lg transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -136,12 +136,12 @@ const ActivityLogDetailModal = ({
 
             {/* Metadata Section */}
             {log.metadata && Object.keys(log.metadata).length > 0 && (
-              <div className="border border-[#E6E0DA] rounded-xl p-4">
+              <div className="border border-[#E2E8F0] rounded-xl p-4">
                 <div className="flex items-center justify-between mb-4">
                   <h4 className="text-sm font-bold text-[#1C1B1A]">Additional Details</h4>
                   <button
                     onClick={handleCopyMetadata}
-                    className="flex items-center gap-2 px-3 py-1.5 text-xs border border-[#E6E0DA] rounded-lg hover:bg-[#F5F1E8] transition-colors"
+                    className="flex items-center gap-2 px-3 py-1.5 text-xs border border-[#E2E8F0] rounded-lg hover:bg-[#F8FAFC] transition-colors"
                   >
                     {copied ? (
                       <>
@@ -167,7 +167,7 @@ const ActivityLogDetailModal = ({
                         {Array.isArray(value) ? (
                           <div className="space-y-1">
                             {value.slice(0, 10).map((item, index) => (
-                              <div key={index} className="text-xs font-mono bg-[#F5F1E8] px-2 py-1 rounded">
+                              <div key={index} className="text-xs font-mono bg-[#F8FAFC] px-2 py-1 rounded">
                                 {String(item)}
                               </div>
                             ))}
@@ -178,7 +178,7 @@ const ActivityLogDetailModal = ({
                             )}
                           </div>
                         ) : typeof value === 'object' ? (
-                          <pre className="text-xs font-mono bg-[#F5F1E8] p-2 rounded overflow-x-auto">
+                          <pre className="text-xs font-mono bg-[#F8FAFC] p-2 rounded overflow-x-auto">
                             {JSON.stringify(value, null, 2)}
                           </pre>
                         ) : (
@@ -193,10 +193,10 @@ const ActivityLogDetailModal = ({
           </div>
 
           {/* Footer */}
-          <div className="p-6 border-t border-[#E6E0DA] bg-[#FAF8F4]">
+          <div className="p-6 border-t border-[#E2E8F0] bg-[#FFFFFF]">
             <button
               onClick={onClose}
-              className="w-full px-4 py-3 bg-[#D4755B] text-white rounded-xl font-semibold text-sm hover:bg-[#C05E44] transition-colors"
+              className="w-full px-4 py-3 bg-[#004AAD] text-white rounded-xl font-semibold text-sm hover:bg-[#003B8B] transition-colors"
             >
               Close
             </button>

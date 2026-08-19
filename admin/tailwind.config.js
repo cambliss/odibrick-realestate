@@ -8,23 +8,23 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // BuildEstate Design System
+        // Odibrick Design System
         cream: {
-          DEFAULT: '#FAF8F4',
-          50: '#FDFCFA',
-          100: '#FAF8F4',
-          200: '#F5F1E8',
+          DEFAULT: '#FFFFFF',
+          50: '#FFFFFF',
+          100: '#FFFFFF',
+          200: '#F8FAFC',
         },
         terracotta: {
-          DEFAULT: '#D4755B',
-          50: '#FBF0EC',
-          100: '#F5D9D0',
-          200: '#EBB3A1',
-          300: '#E08E72',
-          400: '#D4755B',
-          500: '#C05E44',
-          600: '#A34A33',
-          700: '#863A27',
+          DEFAULT: '#004AAD',
+          50: '#E6F0FA',
+          100: '#CCE0F5',
+          200: '#99C2EB',
+          300: '#66A3E0',
+          400: '#004AAD',
+          500: '#003B8B',
+          600: '#002D6B',
+          700: '#001F4C',
         },
         dark: {
           DEFAULT: '#1C1B1A',
@@ -40,10 +40,10 @@ module.exports = {
           900: '#0C0B0A',
         },
         sand: {
-          DEFAULT: '#E6D5C3',
+          DEFAULT: '#E2E8F0',
           50: '#FBF8F5',
           100: '#F5EDE3',
-          200: '#E6D5C3',
+          200: '#E2E8F0',
           300: '#D4B99A',
           400: '#C09B72',
         },
@@ -71,11 +71,11 @@ module.exports = {
         ],
       },
       backgroundImage: {
-        'gradient-terracotta': 'linear-gradient(135deg, #D4755B, #C05E44)',
+        'gradient-terracotta': 'linear-gradient(135deg, #004AAD, #003B8B)',
         'gradient-dark': 'linear-gradient(135deg, #1C1B1A, #2A2927)',
       },
       boxShadow: {
-        'terracotta': '0 4px 14px 0 rgba(212, 117, 91, 0.25)',
+        'terracotta': '0 4px 14px 0 rgba(0, 74, 173, 0.25)',
         'card': '0 1px 3px 0 rgba(28, 27, 26, 0.06), 0 1px 2px -1px rgba(28, 27, 26, 0.06)',
         'card-hover': '0 10px 25px -5px rgba(28, 27, 26, 0.1), 0 8px 10px -6px rgba(28, 27, 26, 0.1)',
       },

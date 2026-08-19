@@ -103,13 +103,13 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-9 h-9 bg-[#D4755B] rounded-lg flex items-center justify-center shadow-lg"
+                className="w-9 h-9 bg-[#004AAD] rounded-lg flex items-center justify-center shadow-lg"
               >
                 <Home className="h-5 w-5 text-white" />
               </motion.div>
               <div>
-                <span className="text-base font-bold text-[#FAF8F4] tracking-tight">
-                  BuildEstate
+                <span className="text-base font-bold text-[#FFFFFF] tracking-tight">
+                  Odibrick
                 </span>
                 <div className="text-[10px] text-[#9CA3AF] font-medium uppercase tracking-widest leading-none">
                   Admin Panel
@@ -121,7 +121,7 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-9 h-9 bg-[#D4755B] rounded-lg flex items-center justify-center shadow-lg"
+                className="w-9 h-9 bg-[#004AAD] rounded-lg flex items-center justify-center shadow-lg"
               >
                 <Home className="h-5 w-5 text-white" />
               </motion.div>
@@ -132,7 +132,7 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
         {/* Desktop Collapse Toggle */}
         <button
           onClick={toggleCollapse}
-          className="hidden lg:flex absolute -right-3 top-20 w-6 h-6 bg-[#D4755B] border-2 border-[#1C1B1A] rounded-full items-center justify-center text-white hover:bg-[#C05E44] transition-colors z-10"
+          className="hidden lg:flex absolute -right-3 top-20 w-6 h-6 bg-[#004AAD] border-2 border-[#1C1B1A] rounded-full items-center justify-center text-white hover:bg-[#003B8B] transition-colors z-10"
         >
           {isCollapsed ? (
             <ChevronRight className="h-3 w-3" />
@@ -164,14 +164,14 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
                       'relative flex items-center gap-3 rounded-lg text-sm font-medium transition-all duration-200 group border-l-2',
                       isCollapsed ? 'px-3 py-2.5 justify-center' : 'px-3 py-2.5',
                       isActive(item.path)
-                        ? 'bg-white/8 border-[#D4755B] text-white'
-                        : 'border-transparent text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/5'
+                        ? 'bg-white/8 border-[#004AAD] text-white'
+                        : 'border-transparent text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/5'
                     )}
                     title={isCollapsed ? item.label : ''}
                   >
                     <item.icon className={cn(
                       'h-5 w-5 flex-shrink-0 transition-colors duration-200',
-                      isActive(item.path) ? 'text-[#D4755B]' : 'text-[#9CA3AF] group-hover:text-[#FAF8F4]'
+                      isActive(item.path) ? 'text-[#004AAD]' : 'text-[#9CA3AF] group-hover:text-[#FFFFFF]'
                     )} />
                     {!isCollapsed && <span className="flex-1">{item.label}</span>}
                   </Link>
@@ -185,17 +185,17 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
         <div className="border-t border-white/10 p-4 flex-shrink-0">
           {/* Notifications */}
           {!isCollapsed ? (
-            <button className="w-full flex items-center gap-3 px-3 py-2.5 mb-2 text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 rounded-lg transition-all duration-200 text-sm font-medium">
+            <button className="w-full flex items-center gap-3 px-3 py-2.5 mb-2 text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 rounded-lg transition-all duration-200 text-sm font-medium">
               <Bell className="h-5 w-5" />
               <span className="flex-1 text-left">Notifications</span>
-              <span className="h-5 w-5 bg-[#D4755B] text-white text-xs flex items-center justify-center rounded-full">
+              <span className="h-5 w-5 bg-[#004AAD] text-white text-xs flex items-center justify-center rounded-full">
                 3
               </span>
             </button>
           ) : (
-            <button className="w-full flex items-center justify-center px-3 py-2.5 mb-2 text-[#9CA3AF] hover:text-[#FAF8F4] hover:bg-white/10 rounded-lg transition-all duration-200 relative">
+            <button className="w-full flex items-center justify-center px-3 py-2.5 mb-2 text-[#9CA3AF] hover:text-[#FFFFFF] hover:bg-white/10 rounded-lg transition-all duration-200 relative">
               <Bell className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 h-4 w-4 bg-[#D4755B] text-white text-[10px] flex items-center justify-center rounded-full">
+              <span className="absolute -top-1 -right-1 h-4 w-4 bg-[#004AAD] text-white text-[10px] flex items-center justify-center rounded-full">
                 3
               </span>
             </button>
@@ -204,17 +204,17 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
           {/* Profile */}
           {!isCollapsed ? (
             <div className="flex items-center gap-3 px-3 py-2.5 mb-2 bg-white/5 rounded-lg">
-              <div className="h-9 w-9 bg-[#D4755B] rounded-lg flex items-center justify-center flex-shrink-0">
+              <div className="h-9 w-9 bg-[#004AAD] rounded-lg flex items-center justify-center flex-shrink-0">
                 <User className="h-4 w-4 text-white" />
               </div>
               <div className="flex-1 min-w-0">
-                <div className="text-sm font-semibold text-[#FAF8F4] truncate">Admin</div>
+                <div className="text-sm font-semibold text-[#FFFFFF] truncate">Admin</div>
                 <div className="text-xs text-[#9CA3AF]">Administrator</div>
               </div>
             </div>
           ) : (
             <div className="flex items-center justify-center px-3 py-2.5 mb-2 bg-white/5 rounded-lg">
-              <div className="h-9 w-9 bg-[#D4755B] rounded-lg flex items-center justify-center">
+              <div className="h-9 w-9 bg-[#004AAD] rounded-lg flex items-center justify-center">
                 <User className="h-4 w-4 text-white" />
               </div>
             </div>
@@ -258,7 +258,7 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
       {/* Mobile Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 left-4 z-50 lg:hidden p-2.5 bg-[#1C1B1A] border border-white/10 rounded-lg shadow-lg text-[#FAF8F4]"
+        className="fixed top-4 left-4 z-50 lg:hidden p-2.5 bg-[#1C1B1A] border border-white/10 rounded-lg shadow-lg text-[#FFFFFF]"
       >
         {isOpen ? (
           <ChevronLeft className="h-5 w-5" />

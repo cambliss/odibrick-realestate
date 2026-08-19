@@ -28,7 +28,7 @@ const PropertiesPage: React.FC = () => {
   useSEO({
     title: 'Browse Properties in Mumbai, Delhi, Bangalore & More',
     description: 'Browse flats, villas, apartments, and houses for sale or rent in Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Filter by price, bedrooms, and location.',
-    url: 'https://buildestate.vercel.app/properties',
+    url: 'https://odibrick.vercel.app/properties',
   });
 
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -110,7 +110,7 @@ const PropertiesPage: React.FC = () => {
   }, [properties, filters, sortBy]);
 
   return (
-    <div className="bg-[#FAF8F4] min-h-screen">
+    <div className="bg-[#FFFFFF] min-h-screen">
       <Navbar />
 
       {/* ── Sticky filter bar ── */}
@@ -125,7 +125,7 @@ const PropertiesPage: React.FC = () => {
 
       {/* ── Page title ── */}
       <div className="max-w-[1440px] mx-auto px-6 pt-8 pb-2">
-        <h1 className="font-fraunces text-3xl font-semibold text-[#221410]">All Properties</h1>
+        <h1 className="font-fraunces text-3xl font-semibold text-[#1F2937]">All Properties</h1>
       </div>
 
       {/* ── Content ── */}
@@ -134,11 +134,11 @@ const PropertiesPage: React.FC = () => {
       {error && !loading && (
         <div className="flex items-center justify-center py-24">
           <div className="text-center">
-            <span className="material-icons text-4xl text-[#D4755B] mb-4 block">error_outline</span>
+            <span className="material-icons text-4xl text-[#004AAD] mb-4 block">error_outline</span>
             <p className="font-manrope text-[#374151] mb-4">{error}</p>
             <button
               onClick={() => window.location.reload()}
-              className="bg-[#D4755B] text-white font-manrope font-bold px-6 py-2.5 rounded-xl hover:bg-[#B86851] active:scale-[0.96] transition-all"
+              className="bg-[#004AAD] text-white font-manrope font-bold px-6 py-2.5 rounded-xl hover:bg-[#003B8B] active:scale-[0.96] transition-all"
             >
               Retry
             </button>
@@ -154,7 +154,7 @@ const PropertiesPage: React.FC = () => {
         >
           <div className="text-center">
             <span className="material-icons text-5xl text-[#D4C4BC] mb-4 block">search_off</span>
-            <p className="font-fraunces text-xl text-[#221410] mb-2">No properties found</p>
+            <p className="font-fraunces text-xl text-[#1F2937] mb-2">No properties found</p>
             <p className="font-manrope text-sm text-[#6B7280]">Try adjusting your filters</p>
           </div>
         </motion.div>

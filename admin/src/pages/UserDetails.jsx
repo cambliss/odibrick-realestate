@@ -137,17 +137,17 @@ const UserDetailsPage = () => {
   // Loading State
   if (loading) {
     return (
-      <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FAF8F4]">
+      <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FFFFFF]">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <div className="h-8 w-48 bg-[#E6D5C3] rounded-xl animate-pulse mb-4" />
-            <div className="bg-white rounded-2xl p-8 border border-[#E6D5C3] animate-pulse">
+            <div className="h-8 w-48 bg-[#E2E8F0] rounded-xl animate-pulse mb-4" />
+            <div className="bg-white rounded-2xl p-8 border border-[#E2E8F0] animate-pulse">
               <div className="flex items-center gap-6">
-                <div className="w-20 h-20 bg-[#E6D5C3] rounded-full" />
+                <div className="w-20 h-20 bg-[#E2E8F0] rounded-full" />
                 <div className="flex-1">
-                  <div className="h-6 w-48 bg-[#E6D5C3] rounded mb-2" />
-                  <div className="h-4 w-64 bg-[#E6D5C3] rounded mb-2" />
-                  <div className="h-4 w-32 bg-[#E6D5C3] rounded" />
+                  <div className="h-6 w-48 bg-[#E2E8F0] rounded mb-2" />
+                  <div className="h-4 w-64 bg-[#E2E8F0] rounded mb-2" />
+                  <div className="h-4 w-32 bg-[#E2E8F0] rounded" />
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ const UserDetailsPage = () => {
   // Error State
   if (error) {
     return (
-      <div className="min-h-screen pt-8 flex items-center justify-center bg-[#FAF8F4]">
+      <div className="min-h-screen pt-8 flex items-center justify-center bg-[#FFFFFF]">
         <div className="text-center max-w-md">
           <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mx-auto mb-4">
             <AlertCircle className="w-8 h-8 text-red-500" />
@@ -169,7 +169,7 @@ const UserDetailsPage = () => {
           <p className="text-[#5A5856] mb-6 text-sm">{error}</p>
           <button
             onClick={() => navigate('/admin/users')}
-            className="px-6 py-3 bg-[#D4755B] text-white rounded-xl font-semibold text-sm hover:bg-[#C05E44] transition-colors"
+            className="px-6 py-3 bg-[#004AAD] text-white rounded-xl font-semibold text-sm hover:bg-[#003B8B] transition-colors"
           >
             Back to Users
           </button>
@@ -179,7 +179,7 @@ const UserDetailsPage = () => {
   }
 
   return (
-    <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FAF8F4]">
+    <div className="min-h-screen pt-8 pb-12 px-4 bg-[#FFFFFF]">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -189,7 +189,7 @@ const UserDetailsPage = () => {
         >
           <button
             onClick={() => navigate('/admin/users')}
-            className="p-2 hover:bg-white rounded-lg border border-[#E6D5C3] transition-colors"
+            className="p-2 hover:bg-white rounded-lg border border-[#E2E8F0] transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
@@ -203,13 +203,13 @@ const UserDetailsPage = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-white rounded-2xl border border-[#E6D5C3] shadow-card p-8 mb-6"
+          className="bg-white rounded-2xl border border-[#E2E8F0] shadow-card p-8 mb-6"
         >
           <div className="flex flex-col lg:flex-row lg:items-start gap-6">
             {/* Avatar & Basic Info */}
             <div className="flex items-center gap-6">
-              <div className="w-20 h-20 bg-[#D4755B]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <Users className="w-10 h-10 text-[#D4755B]" />
+              <div className="w-20 h-20 bg-[#004AAD]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <Users className="w-10 h-10 text-[#004AAD]" />
               </div>
               <div>
                 <h2 className="text-2xl font-bold text-[#1C1B1A] mb-2">{user.name}</h2>
@@ -256,7 +256,7 @@ const UserDetailsPage = () => {
               <button
                 onClick={fetchUserDetails}
                 disabled={actionLoading}
-                className="flex items-center gap-2 px-4 py-2.5 border border-[#E6D5C3] text-[#5A5856] rounded-xl font-medium text-sm hover:bg-[#F5F1E8] transition-colors disabled:opacity-50"
+                className="flex items-center gap-2 px-4 py-2.5 border border-[#E2E8F0] text-[#5A5856] rounded-xl font-medium text-sm hover:bg-[#F8FAFC] transition-colors disabled:opacity-50"
               >
                 <RefreshCw className={cn("w-4 h-4", actionLoading && "animate-spin")} />
                 Refresh
@@ -265,7 +265,7 @@ const UserDetailsPage = () => {
           </div>
 
           {/* User Metadata */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-[#E6D5C3]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-[#E2E8F0]">
             <div>
               <p className="text-sm text-[#5A5856] mb-1">Member Since</p>
               <p className="font-semibold text-[#1C1B1A]">{formatDate(user.createdAt)}</p>
@@ -313,8 +313,8 @@ const UserDetailsPage = () => {
         </motion.div>
 
         {/* Tabs */}
-        <div className="bg-white rounded-2xl border border-[#E6D5C3] shadow-card overflow-hidden">
-          <div className="border-b border-[#E6D5C3] px-6 py-4">
+        <div className="bg-white rounded-2xl border border-[#E2E8F0] shadow-card overflow-hidden">
+          <div className="border-b border-[#E2E8F0] px-6 py-4">
             <div className="flex flex-wrap gap-2">
               {tabs.map((tab) => {
                 const Icon = tab.icon;
@@ -325,8 +325,8 @@ const UserDetailsPage = () => {
                     className={cn(
                       "flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium transition-all",
                       activeTab === tab.key
-                        ? "bg-[#D4755B] text-white"
-                        : "bg-[#F5F1E8] text-[#5A5856] hover:bg-[#E6D5C3]"
+                        ? "bg-[#004AAD] text-white"
+                        : "bg-[#F8FAFC] text-[#5A5856] hover:bg-[#E2E8F0]"
                     )}
                   >
                     <Icon className="w-4 h-4" />
@@ -375,7 +375,7 @@ const UserDetailsPage = () => {
                     {properties.map((property) => (
                       <div
                         key={property._id}
-                        className="border border-[#E6D5C3] rounded-xl p-4 hover:shadow-md transition-shadow"
+                        className="border border-[#E2E8F0] rounded-xl p-4 hover:shadow-md transition-shadow"
                       >
                         <div className="flex items-start justify-between mb-3">
                           <h4 className="font-semibold text-[#1C1B1A] line-clamp-2">{property.title}</h4>
@@ -400,7 +400,7 @@ const UserDetailsPage = () => {
                         <div className="flex gap-2 mt-3">
                           <button
                             onClick={() => window.open(`/property/${property._id}`, '_blank')}
-                            className="flex items-center gap-1 px-2 py-1 text-xs border border-[#E6D5C3] rounded hover:bg-[#F5F1E8] transition-colors"
+                            className="flex items-center gap-1 px-2 py-1 text-xs border border-[#E2E8F0] rounded hover:bg-[#F8FAFC] transition-colors"
                           >
                             <ExternalLink className="w-3 h-3" />
                             View
@@ -411,7 +411,7 @@ const UserDetailsPage = () => {
                   </div>
                 ) : (
                   <div className="text-center py-12">
-                    <Home className="w-12 h-12 text-[#E6D5C3] mx-auto mb-4" />
+                    <Home className="w-12 h-12 text-[#E2E8F0] mx-auto mb-4" />
                     <p className="text-[#5A5856]">No properties listed yet</p>
                   </div>
                 )}
@@ -426,7 +426,7 @@ const UserDetailsPage = () => {
                     {appointments.map((appointment) => (
                       <div
                         key={appointment._id}
-                        className="border border-[#E6D5C3] rounded-xl p-4"
+                        className="border border-[#E2E8F0] rounded-xl p-4"
                       >
                         <div className="flex items-start justify-between mb-3">
                           <div>
@@ -458,7 +458,7 @@ const UserDetailsPage = () => {
                           </div>
                         </div>
                         {appointment.notes && (
-                          <p className="text-sm text-[#5A5856] mt-2 bg-[#F5F1E8] p-3 rounded-lg">
+                          <p className="text-sm text-[#5A5856] mt-2 bg-[#F8FAFC] p-3 rounded-lg">
                             {appointment.notes}
                           </p>
                         )}
@@ -467,7 +467,7 @@ const UserDetailsPage = () => {
                   </div>
                 ) : (
                   <div className="text-center py-12">
-                    <Calendar className="w-12 h-12 text-[#E6D5C3] mx-auto mb-4" />
+                    <Calendar className="w-12 h-12 text-[#E2E8F0] mx-auto mb-4" />
                     <p className="text-[#5A5856]">No appointments booked yet</p>
                   </div>
                 )}

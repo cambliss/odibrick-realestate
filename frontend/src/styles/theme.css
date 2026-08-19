@@ -1,16 +1,16 @@
 @custom-variant dark (&:is(.dark *));
 
-/* BuildEstate Luxury Design System */
+/* Odibrick Luxury Design System */
 :root {
   /* Luxury Color Palette */
-  --canvas-cream: #FAF8F4;
+  --canvas-cream: #FFFFFF;
   --pearl-white: #FFFFFF;
-  --terracotta-clay: #D4755B;
-  --terracotta-primary: #EC4613; /* Figma uses this brighter version */
+  --terracotta-clay: #004AAD;
+  --terracotta-primary: #004AAD; /* Figma uses this brighter version */
   --charcoal-ink: #1C1B1A;
   --slate-gray: #5A5856;
-  --warm-linen: #F5F1E8;
-  --warm-sand: #E6D5C3;
+  --warm-linen: #F8FAFC;
+  --warm-sand: #E2E8F0;
   
   /* Extended palette from Figma */
   --warm-bg-1: #F8F6F6;
@@ -173,7 +173,7 @@
   }
 
   /**
-  * BuildEstate Typography System
+  * Odibrick Typography System
   * Headings use Fraunces (elegant serif)
   * Subheadings use Syne (geometric sans)
   * Body text uses Red Hat Display (humanist sans)
