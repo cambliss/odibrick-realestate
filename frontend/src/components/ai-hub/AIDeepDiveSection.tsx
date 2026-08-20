@@ -14,7 +14,7 @@ const AIDeepDiveSection: React.FC = () => {
     investmentMetrics: [
       { label: 'ROI (5yr)', value: '45%' },
       { label: 'Cap Rate', value: '5.2%' },
-      { label: 'Cash Flow', value: '$8k/mo' }
+      { label: 'Cash Flow', value: '₹8k/mo' }
     ],
     neighborhoodScore: 94
   };
@@ -72,7 +72,7 @@ const AIDeepDiveSection: React.FC = () => {
                 The Eames Retreat
               </h3>
               <p className="font-space-mono font-bold text-lg text-[#004AAD] mb-4">
-                $2,400,000
+                ₹2,400,000
               </p>
 
               <p className="font-manrope font-extralight text-sm leading-relaxed text-[rgba(34,20,16,0.6)] mb-6">

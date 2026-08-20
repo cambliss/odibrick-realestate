@@ -146,7 +146,7 @@ const HeroSection: React.FC = () => {
                       </div>
                     </div>
                     <div className="border-t border-[#e5e7eb] pt-3 flex items-center justify-between">
-                      <span className="font-space-mono text-sm text-[#4b5563]">$4,250,000</span>
+                      <span className="font-space-mono text-sm text-[#4b5563]">₹4,250,000</span>
                       <div className="flex items-center gap-4 text-[#4b5563]">
                         <div className="flex items-center gap-1">
                           <span className="font-material-icons text-xs" aria-hidden="true">bed</span>

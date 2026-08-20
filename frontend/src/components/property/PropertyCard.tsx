@@ -47,7 +47,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
         <p className="font-space-mono text-sm text-[#6b7280] uppercase tracking-wide mb-4">{location}</p>
         <div className="border-t border-[#e5e7eb] pt-4 flex items-center justify-between">
           <span className="font-space-mono text-lg font-bold text-[#111827]">
-            ${price.toLocaleString()}
+            ₹{price.toLocaleString()}
           </span>
           <div className="flex items-center gap-4 text-[#4b5563]">
             <div className="flex items-center gap-1">
