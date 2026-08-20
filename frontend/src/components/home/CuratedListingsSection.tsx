@@ -57,7 +57,7 @@ const CuratedListingsSection: React.FC = () => {
                 <h3 className="font-fraunces text-3xl text-white mb-2">The Glass Pavilion</h3>
                 <p className="font-manrope font-light text-white/80 mb-4">Montecito, California</p>
                 <div className="border-t border-white/20 pt-4 flex items-center justify-between">
-                  <span className="font-space-mono text-white">₹12,500,000</span>
+                  <span className="font-space-mono text-white">₹1,25,00,000</span>
                   <div className="flex items-center gap-6 text-white/90">
                     <div className="flex items-center gap-2">
                       <span className="font-material-icons text-sm" aria-hidden="true">bed</span>
@@ -86,7 +86,7 @@ const CuratedListingsSection: React.FC = () => {
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-fraunces text-xl text-white mb-1">Skyline Penthouse</h3>
                 <p className="font-manrope text-sm text-white/70 mb-3">New York, NY</p>
-                <span className="font-space-mono text-sm text-white">₹8,950,000</span>
+                <span className="font-space-mono text-sm text-white">₹89,50,000</span>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@ const CuratedListingsSection: React.FC = () => {
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="font-fraunces text-xl text-white mb-1">Desert Oasis</h3>
                 <p className="font-manrope text-sm text-white/70 mb-3">Joshua Tree, CA</p>
-                <span className="font-space-mono text-sm text-white">₹3,200,000</span>
+                <span className="font-space-mono text-sm text-white">₹32,00,000</span>
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ const CuratedListingsSection: React.FC = () => {
                 <h3 className="font-fraunces text-2xl text-white mb-2">Coastal Retreat</h3>
                 <p className="font-manrope text-white/70 mb-6">Malibu, California</p>
                 <div className="border-t border-white/20 pt-6 flex items-center justify-between">
-                  <span className="font-space-mono text-white">₹15,000,000</span>
+                  <span className="font-space-mono text-white">₹1,50,00,000</span>
                   <button className="text-white hover:bg-white/10 p-2 rounded-full transition-all" aria-label="View Coastal Retreat">
                     <span className="font-material-icons text-2xl" aria-hidden="true">arrow_forward</span>
                   </button>
