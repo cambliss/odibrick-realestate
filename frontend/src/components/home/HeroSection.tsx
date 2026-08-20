@@ -37,6 +37,16 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="relative bg-[#F8F6F6] pt-20 pb-32 overflow-hidden">
+      {/* Background City Sketch Image */}
+      <div className="absolute inset-0 z-0 select-none pointer-events-none">
+        <img 
+          src="/hero-bg.jpg" 
+          alt="" 
+          className="w-full h-full object-cover object-center opacity-[0.07]" 
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#F8F6F6] via-transparent to-[#F8F6F6]/50" />
+      </div>
+
         {/* Background decorative blurs */}
         <motion.div
           animate={prefersReducedMotion ? {} : {
@@ -146,7 +156,7 @@ const HeroSection: React.FC = () => {
                       </div>
                     </div>
                     <div className="border-t border-[#e5e7eb] pt-3 flex items-center justify-between">
-                      <span className="font-space-mono text-sm text-[#4b5563]">₹4,250,000</span>
+                      <span className="font-space-mono text-sm text-[#4b5563]">₹42,50,000</span>
                       <div className="flex items-center gap-4 text-[#4b5563]">
                         <div className="flex items-center gap-1">
                           <span className="font-material-icons text-xs" aria-hidden="true">bed</span>
