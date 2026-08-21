@@ -103,8 +103,8 @@ const HeroSection: React.FC = () => {
 
             {/* Description */}
             <motion.p data-speakable variants={itemVariants} className="font-manrope font-light text-xl leading-7 text-[#4b5563] mb-12 max-w-[676px]">
-              Find flats, villas, and apartments in Mumbai, Delhi, Bangalore, Ahmedabad, and Pune.
-              Odibrick uses expert search tools and live market analysis to match you with the right property.
+              Find flats, villas, and apartments in Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune.
+              Odibrick uses smart property matching tools and live market analysis to match you with the right property.
             </motion.p>
 
             {/* CTA Buttons */}

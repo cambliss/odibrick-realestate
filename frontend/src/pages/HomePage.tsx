@@ -14,8 +14,8 @@ import CTASection from '../components/home/CTASection';
 
 const HomePage: React.FC = () => {
   useSEO({
-    title: 'Find Flats, Villas & Apartments in India with AI',
-    description: 'Odibrick helps you find flats, villas, and apartments in Mumbai, Delhi, Bangalore, Ahmedabad, and Pune using AI-powered search and live market analysis.',
+    title: 'Find Flats, Villas & Apartments in India | Odibrick',
+    description: 'Odibrick helps you find flats, villas, and apartments in Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune using smart search and live market analysis.',
     url: 'https://odibrick.vercel.app',
   });
 

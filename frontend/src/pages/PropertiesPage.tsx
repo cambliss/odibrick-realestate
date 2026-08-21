@@ -26,8 +26,8 @@ export interface Property {
 
 const PropertiesPage: React.FC = () => {
   useSEO({
-    title: 'Browse Properties in Mumbai, Delhi, Bangalore & More',
-    description: 'Browse flats, villas, apartments, and houses for sale or rent in Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Filter by price, bedrooms, and location.',
+    title: 'Browse Properties in Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune.',
+    description: 'Browse flats, villas, apartments, and houses for sale or rent in Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Filter by price, bedrooms, and location.',
     url: 'https://odibrick.vercel.app/properties',
   });
 

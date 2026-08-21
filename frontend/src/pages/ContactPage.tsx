@@ -18,7 +18,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'What areas do you currently cover?',
-    answer: 'We currently cover major metropolitan areas including Ahmedabad, Mumbai, Delhi, Bangalore, and Pune. We\'re expanding to more cities across India and will update our coverage area regularly.',
+    answer: 'We currently cover major metropolitan areas including Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. We\'re expanding to more cities across India and will update our coverage area regularly.',
   },
   {
     question: 'Can I list my property exclusively with Odibrick?',

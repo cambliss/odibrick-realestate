@@ -13,7 +13,7 @@ import AboutCTASection from '../components/about/AboutCTASection';
 const AboutUsPage: React.FC = () => {
   useSEO({
     title: 'About Odibrick — Luxury Real Estate in India',
-    description: 'Odibrick is a premium real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and values.',
+    description: 'Odibrick is a premium real estate platform serving homebuyers and sellers across Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and values.',
     url: 'https://odibrick.vercel.app/about',
   });
 

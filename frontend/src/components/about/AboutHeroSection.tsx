@@ -5,15 +5,15 @@ const AboutHeroSection: React.FC = () => {
   return (
     <section className="relative bg-[#003B8B] h-[480px] overflow-hidden">
       {/* Background Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-20 mix-blend-overlay"
-        style={{ 
+        style={{
           backgroundImage: `url('${mainAboutImage}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
-        }} 
+        }}
       />
-      
+
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent" />
 
@@ -24,12 +24,12 @@ const AboutHeroSection: React.FC = () => {
             Redefining Real Estate with<br />
             <span className="italic">Intelligence & Elegance</span>
           </h1>
-          
+
           {/* Divider */}
           <div className="w-24 h-px bg-[rgba(242,239,233,0.4)] mx-auto mb-8" />
-          
+
           <p data-speakable className="font-manrope font-extralight text-lg text-[rgba(242,239,233,0.9)] tracking-wide">
-            Odibrick is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune — where data-driven precision meets the art of living.
+            Odibrick is a premium real estate platform serving homebuyers and sellers across Hyderabad, Mumbai, Delhi, Bangalore, Ahmedabad, and Pune — where data-driven precision meets the art of living.
           </p>
         </div>
       </div>
