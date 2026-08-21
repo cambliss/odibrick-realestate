@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               <span className="font-fraunces text-2xl font-bold">Odibrick</span>
             </Link>
             <p className="font-manrope font-extralight text-[#9ca3af] text-sm leading-relaxed mb-6">
-              AI-powered luxury real estate platform connecting you with your dream home through intelligent matching and personalized recommendations.
+              A premium Real Estate platform connecting you with your dream home through intelligent matching and personalized recommendations.
             </p>
             {/* Social Links hidden for now */}
             {/* 
