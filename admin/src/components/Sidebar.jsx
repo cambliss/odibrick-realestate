@@ -58,9 +58,9 @@ const Sidebar = ({ isOpen, setIsOpen, isCollapsed, setIsCollapsed }) => {
       ],
     },
     {
-      label: 'AI & Activity',
+      label: 'System & Activity',
       items: [
-        { path: '/ai-models', label: 'AI Models', icon: Cpu },
+        // { path: '/ai-models', label: 'AI Models', icon: Cpu },
         { path: '/activity-logs', label: 'Activity Logs', icon: FileText },
       ],
     },

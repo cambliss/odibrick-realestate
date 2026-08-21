@@ -81,11 +81,13 @@ const Footer: React.FC = () => {
                   Browse Properties
                 </Link>
               </li>
+              {/* 
               <li>
                 <Link to="/ai-hub" className="font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white hover:pl-2 transition-all inline-block">
                   AI Property Hub
                 </Link>
               </li>
+              */}
               <li>
                 <Link to="/about" className="font-manrope font-extralight text-[#9ca3af] text-sm hover:text-white hover:pl-2 transition-all inline-block">
                   About Us

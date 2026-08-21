@@ -36,11 +36,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({
             FEATURED
           </div>
         )}
-        {aiMatch && (
-          <div className="absolute top-4 right-4 bg-[rgba(0, 74, 173, 0.1)] px-2 py-1 rounded">
-            <span className="font-manrope font-bold text-xs text-[#004AAD]">AI MATCH: {aiMatch}%</span>
-          </div>
-        )}
+        {/* Hidden AI MATCH badge */}
       </div>
       <div className="p-6">
         <h3 className="font-fraunces text-xl font-bold text-[#111827] mb-2">{title}</h3>

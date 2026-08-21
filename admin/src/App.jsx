@@ -87,7 +87,7 @@ const AppLayout = () => {
                 <Route path="/users" element={<Users />} />
                 <Route path="/users/:id" element={<UserDetails />} />
                 <Route path="/activity-logs" element={<ActivityLogs />} />
-                <Route path="/ai-models" element={<AIModels />} />
+                {/* <Route path="/ai-models" element={<AIModels />} /> */}
               </Route>
 
               {/* 404 Route */}

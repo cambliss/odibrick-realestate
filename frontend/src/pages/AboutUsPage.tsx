@@ -12,8 +12,8 @@ import AboutCTASection from '../components/about/AboutCTASection';
 
 const AboutUsPage: React.FC = () => {
   useSEO({
-    title: 'About Odibrick — AI-Powered Real Estate in India',
-    description: 'Odibrick is an AI-powered real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and technology.',
+    title: 'About Odibrick — Luxury Real Estate in India',
+    description: 'Odibrick is a premium real estate platform serving homebuyers and sellers across Mumbai, Delhi, Bangalore, Ahmedabad, and Pune. Learn about our mission and values.',
     url: 'https://odibrick.vercel.app/about',
   });
 
@@ -37,7 +37,7 @@ const AboutUsPage: React.FC = () => {
       <AboutValuesSection />
 
       {/* AI Intelligence Section */}
-      <AboutAISection />
+      {/* <AboutAISection /> */}
 
       {/* CTA Section */}
       <AboutCTASection />

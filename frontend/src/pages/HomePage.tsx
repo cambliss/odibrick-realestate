@@ -29,10 +29,10 @@ const HomePage: React.FC = () => {
         type="howTo"
         data={{
           howToName: 'How to Buy Property with Odibrick',
-          howToDescription: 'AI-assisted steps to find and purchase your perfect home in India.',
+          howToDescription: 'Expert-assisted steps to find and purchase your perfect home in India.',
           steps: [
-            { name: 'Profile Analysis', text: 'Our AI deep-dives into your preferences, lifestyle needs, and financial goals to build a comprehensive buyer profile.' },
-            { name: 'Smart Matching', text: 'Algorithms scan thousands of listings to find properties that align with your unique criteria, filtering out the noise.' },
+            { name: 'Profile Analysis', text: 'Our experts deep-dive into your preferences, lifestyle needs, and financial goals to build a comprehensive buyer profile.' },
+            { name: 'Smart Matching', text: 'We scan thousands of listings to find properties that align with your unique criteria, filtering out the noise.' },
             { name: 'Virtual Tours & Insights', text: 'Experience homes remotely with immersive 3D tours and receive detailed neighborhood analytics reports.' },
             { name: 'Seamless Closing', text: 'From offer to keys, our digital platform handles paperwork, negotiations, and closing logistics effortlessly.' },
           ],
@@ -49,7 +49,7 @@ const HomePage: React.FC = () => {
       <StatsSection />
 
       {/* AI Intelligence Section */}
-      <AIIntelligenceSection />
+      {/* <AIIntelligenceSection /> */}
 
       {/* Curated Listings Section */}
       <CuratedListingsSection />

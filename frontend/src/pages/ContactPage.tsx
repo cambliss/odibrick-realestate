@@ -13,8 +13,8 @@ import NewsletterBanner from '../components/contact/NewsletterBanner';
 
 const FAQ_ITEMS = [
   {
-    question: 'How does the AI matching process work?',
-    answer: 'Our proprietary algorithm analyzes over 50 data points from your preferences and lifestyle inputs to suggest properties that align with your unique needs, often uncovering options you might have missed.',
+    question: 'How does the property matching process work?',
+    answer: 'Our proprietary system analyzes over 50 data points from your preferences and lifestyle inputs to suggest properties that align with your unique needs, often uncovering options you might have missed.',
   },
   {
     question: 'What areas do you currently cover?',
@@ -22,7 +22,7 @@ const FAQ_ITEMS = [
   },
   {
     question: 'Can I list my property exclusively with Odibrick?',
-    answer: 'Yes, we offer exclusive listing agreements with premium marketing benefits including professional photography, virtual tours, AI-powered listing optimization, and dedicated property consultant support throughout the selling process.',
+    answer: 'Yes, we offer exclusive listing agreements with premium marketing benefits including professional photography, virtual tours, advanced listing optimization, and dedicated property consultant support throughout the selling process.',
   },
   {
     question: 'How do I schedule a virtual tour?',
