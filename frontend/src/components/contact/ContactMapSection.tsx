@@ -17,7 +17,12 @@ const ContactMapSection: React.FC = () => {
 
           {/* Map Overlay Button */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <button className="bg-white shadow-2xl rounded-xl px-8 py-4 flex items-center gap-3 hover:shadow-3xl transition-shadow group">
+            <a
+              href="https://maps.app.goo.gl/hRBhbF1jfkYPphct8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white shadow-2xl rounded-xl px-8 py-4 flex items-center gap-3 hover:shadow-3xl transition-shadow group"
+            >
               <span className="material-icons text-2xl text-[#004AAD] group-hover:scale-110 transition-transform">
                 location_on
               </span>
@@ -32,7 +37,7 @@ const ContactMapSection: React.FC = () => {
               <span className="material-icons text-[#004AAD]">
                 arrow_forward
               </span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
