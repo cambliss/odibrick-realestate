@@ -1,18 +1,30 @@
 import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import happyHomeowner1 from '../../images/Happy Homeowners_1.jpg';
 import happyHomeowner2 from '../../images/Happy Homeowners_2.jpg';
 import happyHomeowner3 from '../../images/Team section.jpg';
-import rightFeatureCard from '../../images/Right side feature card.jpg';
 
 const HeroSection: React.FC = () => {
+  const navigate = useNavigate();
+  const [searchLocation, setSearchLocation] = React.useState('');
+  const [searchType, setSearchType] = React.useState('');
+  const [searchPurpose, setSearchPurpose] = React.useState('buy');
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const params = new URLSearchParams();
+    if (searchLocation) params.set('location', searchLocation);
+    if (searchType) params.set('type', searchType);
+    if (searchPurpose) params.set('availability', searchPurpose);
+    navigate(`/properties?${params.toString()}`);
+  };
+
   const prefersReducedMotion = useReducedMotion();
   const propertyImages = [
     happyHomeowner1,
     happyHomeowner2,
     happyHomeowner3,
-    rightFeatureCard,
   ];
 
   const containerVariants = {
@@ -131,40 +143,95 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right - Featured Property Card */}
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden shadow-[0px_25px_50px_-12px_#e5e7eb]">
-              <div className="relative h-[625px]">
-                <img
-                  src={propertyImages[3]}
-                  alt="Villa Serenity"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                {/* Property Info Overlay */}
-                <div className="absolute bottom-6 left-6 right-6 backdrop-blur-md bg-white/90 border border-white/20 rounded-xl p-4 shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)]">
-                  <div className="flex justify-between items-start mb-3">
-                    <div>
-                      <h3 className="font-fraunces font-bold text-lg text-[#111827] mb-1">Villa Serenity</h3>
-                      <p className="font-space-mono text-xs text-[#6b7280] uppercase tracking-wide">Beverly Hills, CA</p>
-                    </div>
-                    {/* Hidden AI Match Badge */}
-                  </div>
-                  <div className="border-t border-[#e5e7eb] pt-3 flex items-center justify-between">
-                    <span className="font-space-mono text-sm text-[#4b5563]">₹42,50,000</span>
-                    <div className="flex items-center gap-4 text-[#4b5563]">
-                      <div className="flex items-center gap-1">
-                        <span className="font-material-icons text-xs" aria-hidden="true">bed</span>
-                        <span className="font-manrope text-sm">4</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <span className="font-material-icons text-xs" aria-hidden="true">shower</span>
-                        <span className="font-manrope text-sm">3.5</span>
-                      </div>
-                    </div>
+          {/* Right - Search Widget Card */}
+          <div className="relative z-10 flex justify-center lg:justify-end">
+            <motion.div 
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
+              className="w-full max-w-[480px] bg-white border border-[#E2E8F0] rounded-3xl p-8 shadow-[0_20px_50px_rgba(0,0,0,0.06)]"
+            >
+              <div className="mb-6">
+                <h2 className="font-fraunces text-2xl font-bold text-[#111827] mb-2">Find Your Home</h2>
+                <p className="font-manrope text-sm text-[#6B7280]">Select your preferences to browse matching listings.</p>
+              </div>
+
+              <form onSubmit={handleSearchSubmit} className="space-y-5">
+                {/* Purpose (Buy / Rent) Toggle */}
+                <div>
+                  <label className="block font-manrope text-xs font-bold text-[#374151] uppercase tracking-wider mb-2">I want to</label>
+                  <div className="grid grid-cols-2 gap-2 bg-[#F8FAFC] p-1.5 rounded-xl border border-[#E2E8F0]">
+                    <button
+                      type="button"
+                      onClick={() => setSearchPurpose('buy')}
+                      className={`py-2 rounded-lg font-manrope text-sm font-semibold transition-all ${
+                        searchPurpose === 'buy'
+                          ? 'bg-[#004AAD] text-white shadow-sm'
+                          : 'text-[#4B5563] hover:text-[#004AAD]'
+                      }`}
+                    >
+                      Buy
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSearchPurpose('rent')}
+                      className={`py-2 rounded-lg font-manrope text-sm font-semibold transition-all ${
+                        searchPurpose === 'rent'
+                          ? 'bg-[#004AAD] text-white shadow-sm'
+                          : 'text-[#4B5563] hover:text-[#004AAD]'
+                      }`}
+                    >
+                      Rent
+                    </button>
                   </div>
                 </div>
-              </div>
-            </div>
+
+                {/* Location Select */}
+                <div>
+                  <label htmlFor="search-location" className="block font-manrope text-xs font-bold text-[#374151] uppercase tracking-wider mb-2">Location</label>
+                  <select
+                    id="search-location"
+                    value={searchLocation}
+                    onChange={(e) => setSearchLocation(e.target.value)}
+                    className="w-full h-12 px-4 rounded-xl border border-[#E2E8F0] bg-white font-manrope text-sm text-[#1F2937] outline-none focus:border-[#004AAD] transition-colors"
+                  >
+                    <option value="">Any Location</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Pune">Pune</option>
+                  </select>
+                </div>
+
+                {/* Property Type Select */}
+                <div>
+                  <label htmlFor="search-type" className="block font-manrope text-xs font-bold text-[#374151] uppercase tracking-wider mb-2">Property Type</label>
+                  <select
+                    id="search-type"
+                    value={searchType}
+                    onChange={(e) => setSearchType(e.target.value)}
+                    className="w-full h-12 px-4 rounded-xl border border-[#E2E8F0] bg-white font-manrope text-sm text-[#1F2937] outline-none focus:border-[#004AAD] transition-colors"
+                  >
+                    <option value="">Any Type</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="House">House</option>
+                    <option value="Office">Office</option>
+                  </select>
+                </div>
+
+                {/* Search Button */}
+                <button
+                  type="submit"
+                  className="w-full h-14 bg-[#004AAD] text-white font-manrope font-bold text-base rounded-xl hover:bg-[#003B8B] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-[0.98]"
+                >
+                  <span className="material-icons text-xl">search</span>
+                  Search Properties
+                </button>
+              </form>
+            </motion.div>
           </div>
         </div>
       </div>

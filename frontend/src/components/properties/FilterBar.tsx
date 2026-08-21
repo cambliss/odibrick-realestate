@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { SlidersHorizontal, ChevronDown, X, Search } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -90,18 +91,21 @@ const FilterBar: React.FC<FilterBarProps> = ({
   viewMode = 'grid',
   onViewChange,
 }) => {
-  const [location, setLocation] = useState('');
-  const [availability, setAvailability] = useState('');
+  const [searchParams] = useSearchParams();
+
+  const [location, setLocation] = useState(() => searchParams.get('location') || '');
+  const [availability, setAvailability] = useState(() => searchParams.get('availability') || '');
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 200]);
-  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  const [selectedTypes, setSelectedTypes] = useState<string[]>(() => {
+    const type = searchParams.get('type');
+    return type ? [type] : [];
+  });
   const [bedrooms, setBedrooms] = useState(0);
   const [selectedAmenities, setSelectedAmenities] = useState<string[]>([]);
   const [showMoreFilters, setShowMoreFilters] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
 
-  const isFirstRender = useRef(true);
   useEffect(() => {
-    if (isFirstRender.current) { isFirstRender.current = false; return; }
     const f: FilterState = {};
     if (location) f.location = location;
     if (availability) f.availability = availability;
